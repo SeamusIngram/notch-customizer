@@ -1,8 +1,8 @@
 include <Round-Anything/polyround.scad>
 // Pick Gate to Notch
-s = "shell_front.stl";
-//s = "gate 0-3mm.stl";
-//s = "gate 0-6mm.stl";
+s = "gates/shell_front.stl";
+//s = "gates/gate 0-3mm.stl";
+//s = "gates/gate 0-6mm.stl";
 //Basic Parameters
 ang1 = 17;
 ang2 = 73;
