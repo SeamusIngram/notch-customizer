@@ -1,7 +1,7 @@
 include <Round-Anything/polyround.scad>
 // Pick Gate to Notch
-//s = "shell_front.stl";
-s = "gate 0-3mm.stl";
+s = "shell_front.stl";
+//s = "gate 0-3mm.stl";
 //s = "gate 0-6mm.stl";
 //Basic Parameters
 ang1 = 17;
@@ -15,9 +15,9 @@ ang8 = 17;
 notch_rounding =0.25;
 // Notch Style Parameters
 straight = 0;
-convexity = 0.08;
-convexity_weight = 0.8;
-flare_ang = 15;
+convexity = 0.05;
+convexity_weight = 0.75;
+flare_ang = 25;
 // Advanced Parameters
 notch_depth_double = 11.4;
 diagonal_depth_double = 11.5;

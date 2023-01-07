@@ -1,7 +1,7 @@
 // Pick Gate to Notch
-//s = "shell_front.stl";
+s = "shell_front.stl";
 //s = "gate 0-3mm.stl";
-s = "gate 0-6mm.stl";
+//s = "gate 0-6mm.stl";
 //Basic Parameters
 ang1 = 17;
 ang2 = 73;
@@ -11,12 +11,13 @@ ang5 = 17;
 ang6 = 73;
 ang7 = 73;
 ang8 = 17;
+// Rounding not relevant for this version of the file
 notch_rounding =0.25;
 // Notch Style Parameters
 straight = 1;
 convexity = 0.05;
 convexity_weight = 0.5;
-flare_ang = 20;
+flare_ang = 15;
 // Advanced Parameters
 notch_depth_double = 11.4;
 diagonal_depth_double = 11.5;
