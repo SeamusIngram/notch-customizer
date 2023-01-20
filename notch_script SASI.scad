@@ -1,6 +1,6 @@
 include <Round-Anything/polyround.scad>
 // Pick Gate to Notch
-s = "gates/shell_front.stl";
+s = "SASI Restrictor Gate- 19mm Gate.stl";
 //s = "gates/gate 0-3mm.stl";
 //s = "gates/gate 0-6mm.stl";
 //Basic Parameters
@@ -14,22 +14,22 @@ ang7 = 73;
 ang8 = 17;
 notch_rounding =0.25;
 // Notch Style Parameters
-straight = 1;
-convexity = 0.08;
+straight = 0;
+convexity = 0.04;
 convexity_weight = 0.85;
 flare_ang = 10;
 // Advanced Parameters
-notch_depth_double = 11.4;
-diagonal_depth_double = 11.5;
-notch_depth_single = 11.4;
-diagonal_depth_single = 11.1;
+notch_depth_double = 9.3;
+diagonal_depth_double = 9.44;
+notch_depth_single = 9.2;
+diagonal_depth_single = 9.34;
 //Adjust for your model's angle offset
 // Default GCC offset is 3 degrees
-off = 3;
+off = 0;
 // Probably don't need to adjust these
 fs = 0.5;
-diagonal_start_depth = 10;
-notch_start_depth = 9;
+diagonal_start_depth = 8;
+notch_start_depth = 8;
 flare_length = 3;
 // --- FUNCTIONS AND MODULES ---
 //Bezier Curves
