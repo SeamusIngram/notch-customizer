@@ -1,6 +1,6 @@
 include <Round-Anything/polyround.scad>
 // Pick Gate to Notch
-s = "SASI Restrictor Gate- 19mm Gate.stl";
+s = "gates/SASI Restrictor Gate- 19mm Gate.stl";
 //s = "gates/gate 0-3mm.stl";
 //s = "gates/gate 0-6mm.stl";
 //Basic Parameters
