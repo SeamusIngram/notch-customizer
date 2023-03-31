@@ -1,6 +1,6 @@
 // Pick Gate to Notch
-s = "gates/shell_front.stl";
-//s = "gates/gate 0-3mm.stl";
+//s = "gates/shell_front.stl";
+s = "gates/gate 0-3mm.stl";
 //s = "gates/gate 0-6mm.stl";
 //Basic Parameters
 ang1 = 17;

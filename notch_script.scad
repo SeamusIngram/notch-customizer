@@ -1,8 +1,8 @@
 include <Round-Anything/polyround.scad>
 // Pick Gate to Notch
-s = "gates/shell_front.stl";
+//s = "gates/shell_front.stl";
 //s = "gates/gate 0-3mm.stl";
-//s = "gates/gate 0-6mm.stl";
+s = "gates/gate 0-6mm.stl";
 //Basic Parameters
 ang1 = 17;
 ang2 = 73;
@@ -14,12 +14,12 @@ ang7 = 73;
 ang8 = 17;
 notch_rounding =0.25;
 // Notch Style Parameters
-straight = 1;
-convexity = 0.08;
-convexity_weight = 0.85;
-flare_ang = 10;
+straight = 0;
+convexity = 0.09;
+convexity_weight = 0.25;
+flare_ang = 20;
 // Advanced Parameters
-notch_depth_double = 11.4;
+notch_depth_double = 11.3;
 diagonal_depth_double = 11.5;
 notch_depth_single = 11.4;
 diagonal_depth_single = 11.1;
@@ -98,7 +98,9 @@ phi2 = min(abs(a2-(mid-22.5)),abs(a2-(mid+22.5)));
 // Gate is hexagonal so cut depth depends on angle
 // This allows for consistent notch depths
 r1 = notch_depth_double*cos(5.5)/cos(phi1);    
-r2 = notch_depth_double*cos(5.5)/cos(phi2);    
+r2 = notch_depth_double*cos(5.5)/cos(phi2);  
+echo(notch_depth_double);
+echo(r2);  
 //diag start
 p1 = polarToXY([diagonal_start_depth,mid-off,0]);
 //notch1 start
