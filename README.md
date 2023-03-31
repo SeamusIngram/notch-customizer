@@ -1,6 +1,9 @@
 # notch-customizer
 Parametric GCC notching using OpenSCAD. Should support any GCC shell design ideas!
 
+# UPDATE
+I have created a version of the script that uses the python library CadQuery. It has a number of improvements, such as import and export of .step files, as well as an additional feature option. I don't think I'll be updating the OpenSCAD version any further. You can find the CadQuery repo [here](https://github.com/SeamusIngram/notch-customizer-cq).
+
 Thanks to Phobs and Goomwaves allowing for software calibration of notch values, it is easier to produce notched Gamecube Controllers, since the notches do not have to be made specifically for one controller, and do not need to be as precise. 3D printing is of great interest to modders for improving controller design. It could potentially lead to controllers with new shell shapes, notches right from the factory, or easily swappable gates. I came up with this script to try and make it so that anybody could easily customize and hopefully get a shell or gate 3d printed with the notches they wanted. Do I think that computer generated, 3D fabricated notches will replace talented modders and OEM shells? No, the feel of well made notches will certainly be better, but I do think if 3D printed gates can be shown to be consistent and relatively durable, it will allow many more people to have access to low cost options.
 
 # Dependencies
@@ -23,4 +26,4 @@ If the depths of the notch are not to your liking, you can make them as deep or 
 I have included an unmodified GCC shell STL to be customised. If you have your own gates that you wish to notch, the script should work, so long as your gate is centred at (0,0) (the z position shouldn't matter). Keep in mind that the spacing and depth of the notches are for a GCC gate, so if your design is significantly different it may not be compatible. Also be aware the GCC gate is tilted by design approximately 3 degrees, so if your gate has a different offset, then this has to be changed or the notches will not be in the correct locations. Change the variable **off** in the script to the appropriate angle. Make sure to provide your gate as an .stl file, and put the line **s = "path/to/my.stl"** near the top of the script.
 
 # To be tested!
-Though I have printed some early prototypes, those were with an FDM printer, which has issues recreating the fine details. I do plan on using JLCPCB's services to test different materials and fabrication technologies, but that hasn't happened yet. If you try it yourself, let me know how well it works!
+Though I have printed some early prototypes, those were with an FDM printer, which has issues recreating the fine details. I do plan on using a 3d print service to test different materials and fabrication technologies, but that hasn't happened yet. If you try it yourself, let me know how well it works!
